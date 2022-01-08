@@ -29,5 +29,41 @@
       </div>
     </div>
   </div>
+
+<script>
+
+  const scenario_prologe = [
+  {
+      "name": "김애저",
+      "text": "첫번째 샘플 텍스트입니다."
+    },
+    {
+      "name": "김애저",
+      "text": "두번쨰 샘플 텍스트입니다."
+    },
+    {
+      "text": "이름이 없는 경우에는 이름 창이 사라졌으면 좋겠어요."
+    },
+    {
+      "name": "rladowj",
+      "text": "왈왈"
+    }
+  ]
+
+
+  const parse = (i = 0) => {
+    const {text,name} = scenario[i]
+    document.getElementById('text').innerText = text;
+    if (!!name) {
+      document.getElementById('name').innerText = name;
+    }
+  }
+
+  parse();
+
+
+</script>
+
+
   </body>
   </html>
