@@ -7,8 +7,8 @@ body {
 
 #whole-wrapper {
 
-    width: 640px;
-    height: 480px;
+    width: 1920px;
+    height: 1080px;
 
     border-radius: 5px;
     border: 1px solid black;
@@ -27,7 +27,7 @@ body {
 
 #chat-wrapper {
     position: absolute;
-    color: white;
+    color: black;
     width: 100%;
     bottom: 0;
 
