@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/frame.css">
   </head>
   <body>
-    
+
     <div id="whole-wrapper">
       <div id="character-wrapper">
         <img src="./images/char.PNG" alt="">
@@ -50,7 +50,7 @@
 
 
   const parse = (i = 0) => {
-    const {text,name} = scenario[i]
+    const {text,name} = scenario_prologe[i]
     document.getElementById('text').innerText = text;
     if (!!name) {
       document.getElementById('name').innerText = name;
