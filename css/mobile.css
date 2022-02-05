@@ -2,8 +2,8 @@
 /* 모든 디바이스 & 최소 너비가 200 이상 & 최대 너비가 1080 이하라는 조건을 모두 만족할 때*/
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: block;
     border: black;
     place-content: center;
