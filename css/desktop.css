@@ -1,4 +1,4 @@
-@media all and (min-width:1200px) {}
+@media all and (min-device-width:1200px) {}
 /* 모든 디바이스 & 최소 너비가 1200 이상이라는 조건을 모두 만족할 때*/
 
 body {
@@ -31,7 +31,7 @@ body {
     width: 100%;
     bottom: 0;
 
-    display: grid;
+    display: block;
     grid-template-rows: 20px 100px 15px;
     grid-template-areas:
             "name . . . "
