@@ -47,8 +47,9 @@ body {
 #name {
     grid-area: name;
     border-top-right-radius: 5px;
-    padding-top: .3em;
-    display: grid;
+    padding-top: 1em;
+    padding-left: 1em;
+    display: flex;
     place-items: center;
 }
 
@@ -63,12 +64,6 @@ body {
     width: 100%;
 }
 
-#next {
-    grid-area: next;
-    display: grid;
-    place-items: center;
-    font-size: 2em;
-}
 
 #setting {
     grid-area: setting;

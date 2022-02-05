@@ -63,13 +63,6 @@ body {
     width: 100%;
 }
 
-#next {
-    grid-area: next;
-    display: grid;
-    place-items: center;
-    font-size: 2em;
-}
-
 #setting {
     grid-area: setting;
     box-sizing: border-box;
