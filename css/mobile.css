@@ -56,7 +56,7 @@ body {
     grid-area: text;
     box-sizing: border-box;
     padding: 1em;
-    display: flex;
+    display: block;
 }
 
 #text {
