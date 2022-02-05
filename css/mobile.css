@@ -10,8 +10,8 @@ body {
 }
 
 #whole-wrapper {
-
-
+    width: 100vw;
+    height: 1000px;
     border-radius: 5px;
     border: 1px solid black;
 

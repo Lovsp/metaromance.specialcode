@@ -10,13 +10,12 @@ body {
 }
 
 #whole-wrapper {
-
-
+    width: 100vw;
+    height: 480px;
     border-radius: 5px;
     border: 1px solid black;
 
     font-size: 48px;
-
     position: relative;
 
 }
