@@ -5,7 +5,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: block;
-    margin: 0;
+    background: black;
     border: black;
     place-content: center;
 }
@@ -14,8 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     border-radius: 5px;
-    border: 1px solid black;
-    font-size: 12px;
+    font-size: 20px;
     position: relative;
 
 }
