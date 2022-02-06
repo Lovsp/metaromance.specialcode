@@ -70,25 +70,3 @@ body {
     width: 100%;
 }
 
-
-#setting {
-    grid-area: setting;
-    box-sizing: border-box;
-    padding-right: .5em;
-    padding-bottom: .1em;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#setting span {
-    cursor: pointer;
-}
-
-#setting span:hover {
-    text-shadow: 0 0 4px white;
-    color: black;
-}
-
-#setting span + span {
-    margin-left: 1em;
-}
