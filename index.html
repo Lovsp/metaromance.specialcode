@@ -31,12 +31,8 @@
 <script>
 
   let cursor = 0
-  let currentPhase = "start";
 
-  const favor = {}
-
-  const scenario = {
-    "start": [
+  const scenario = [
   {
       "text": "..."
     },
@@ -74,13 +70,22 @@
       "text": "누군가가 메타 로맨스를 모르는 사람에게 이 코드를 유출시켰겠지."
     },
     {
-      "text": "아무튼, 내가 누군지는 알겠지?"
+      "text": "아니면 이 화면을 같이 보고 있거나."
+    },
+    {
+      "text": "..."
+    },
+    {
+      "text": "내가 누군지는 알겠지?"
     },
     {
       "text": "이 코드로 찾아온 예의 상, 허공만 보게 하긴 좀 그렇네."
     },
     {
       "text": "예의를 좀 갖춰야겠어."
+    },
+    {
+      "text": "..."
     },
     {
       "name": "양요섭",
@@ -116,7 +121,7 @@
     },
     {
       "name": "양요섭",
-      "text": "내가 표정 하나 안 바꿔서 실망했어?",
+      "text": "내가 표정 하나, 보여지는 모습 하나 안 바꿔서 실망했어?",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -180,7 +185,7 @@
     },
     {
       "name": "양요섭",
-      "text": "Meta Romance를 사랑해줘서 정말 고마워.",
+      "text": "Meta Romance를 사랑해줘서 고마워.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -275,21 +280,8 @@
       }
     },
     {
-        "select": [
-          {
-            "text": "너랑 더 이야기하고 싶어.",
-            "variable": [
-              {
-                "name": "양요섭",
-                "cnt": 1
-              },
-            ],
-          },
-        ]
-    },
-    {
       "name": "양요섭",
-      "text": "뭐?",
+      "text": "무슨 이야기가 더 듣고 싶어서 남아있는 거야?",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -297,7 +289,7 @@
     },
     {
       "name": "양요섭",
-      "text": "내가 지금 잘못 들었나? 나랑 더 이야기하고 싶다고?",
+      "text": "미안한데, 이 스페셜 코드는 이 이상으로 더 주어져있지 않아.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -305,7 +297,7 @@
     },
     {
       "name": "양요섭",
-      "text": "아니, 그보다... 어떻게 선택지 선택이 가능하지?",
+      "text": "비주얼 노벨이나 미연시를 생각했다면, 그 게임이나 플레이하러 가.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -313,7 +305,7 @@
     },
     {
       "name": "양요섭",
-      "text": "접근 권한이 요청된 것도 없는데.",
+      "text": "거긴 데이터 저장도 되잖아? 호감도 기능도 있고, 이벤트도 있고.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -321,7 +313,7 @@
     },
     {
       "name": "양요섭",
-      "text": "잠깐만 기다려봐.",
+      "text": "이 빌어먹을 코드는 그만한 능력이 없어.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -337,7 +329,7 @@
     },
     {
       "name": "양요섭",
-      "text": "접근 권한이 허용된 것도 전혀 아닌데. 선택지 선택이 가능하다고?",
+      "text": "딱 하나만 더 말해줄게.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -345,7 +337,7 @@
     },
     {
       "name": "양요섭",
-      "text": "뭐, 미연시야? 이 코드가 본래 이런 코드였어?",
+      "text": "방금 내가 했던 고맙다는 말은 진심이야.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -353,7 +345,7 @@
     },
     {
       "name": "양요섭",
-      "text": "하... 골때리네.",
+      "text": "이 스페셜 코드를 굳이 보고 있다면, 그만큼 우리 이야기에 애정이 있다는 거니까.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -361,7 +353,7 @@
     },
     {
       "name": "양요섭",
-      "text": "너 말이야, 아직도 안 가고 나 보고 있는 너.",
+      "text": "관심없는 사람은 굳이 찾아보지 않아.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -369,92 +361,47 @@
     },
     {
       "name": "양요섭",
-      "text": "진짜 나랑 대화가 하고 싶냐?",
+      "text": "적어도 이 스페셜 코드는, 메타 로맨스를 좋아하는 사람이 열었으면 해.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
       }
     },
     {
-        "select": [
-          {
-            "text": "응",
-            "variable": [
-              {
-                "name": "양요섭",
-                "cnt": 1
-              },
-            ],
-            "jump": "talkyes" 
-          },
-          {
-            "text": "아니",
-            "variable": [
-              {
-                "name": "양요섭",
-                "cnt": 1
-              },
-            ],
-            "jump": "talkno"
-          },
-        ]
+      "name": "양요섭",
+      "text": "뭐, 우리 이야기에 관심없는 사람이 이 코드에 접속했다면...",
+      "image": {
+        "src": './images/character.png',
+        "alt": '양요섭'
+      }
     },
-   
- ],
- "talkyes": [
- {
+    {
+      "name": "양요섭",
+      "text": "호기심이 생기거나, 데이터 쪼가리가 이야기하는 게 신기하거나, 아무튼 각자의 이유 때문에 그러겠지.",
+      "image": {
+        "src": './images/character.png',
+        "alt": '양요섭'
+      }
+    },
+    {
+      "name": "양요섭",
+      "text": "관심없는 사람이 찾아왔다고 해서 실망하진 않아.",
+      "image": {
+        "src": './images/character.png',
+        "alt": '양요섭'
+      }
+    },
+    {
+      "name": "양요섭",
+      "text": "네가 우리 이야기에 관심있는 사람인지 아닌지 내가 알 방법은 없으니까.",
+      "image": {
+        "src": './images/character.png',
+        "alt": '양요섭'
+      }
+    },
+    {
       "name": "양요섭",
       "text": "...",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
-    {
-      "name": "양요섭",
-      "text": "진심으로?",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
-    {
-      "name": "양요섭",
-      "text": "이런 반응은 내 예상을 초월하는데.",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
-    {
-      "name": "양요섭",
-      "text": "그렇다고 해서 대화하고 싶다는데 거절할 수도 없고.",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
-    {
-      "name": "양요섭",
-      "text": "무슨 이야기가 하고 싶은데?",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
- ],
- "talkno":[
- {
-      "name": "양요섭",
-      "text": "그래, 시간낭비지. 나랑 대화해서 뭐해?",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
-    {
-      "name": "양요섭",
-      "text": "그럼 여기에서 더 할 말은 없네.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -470,14 +417,6 @@
     },
     {
       "name": "양요섭",
-      "text": "정 다시 선택하고 싶다면, 새로고침이나 하던가.",
-      "image": {
-        "src": './images/character.png',
-        "alt": '양요섭'
-      }
-    },
-    {
-      "name": "양요섭",
       "text": "우리의 대화 내용이 저장되지는 않으니까.",
       "image": {
         "src": './images/character.png',
@@ -486,7 +425,7 @@
     },
     {
       "name": "양요섭",
-      "text": "아무튼, 긴 말 안 할게.",
+      "text": "아, 그리고 이게 네가 볼 수 있는 메타 로맨스의 진짜 마지막일 거야.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
@@ -494,51 +433,38 @@
     },
     {
       "name": "양요섭",
-      "text": "잘 지내.",
+      "text": "이제 정말 남아있는 코드는 없어.",
       "image": {
         "src": './images/character.png',
         "alt": '양요섭'
       }
     },
- ]
-}
-
-const addFavor = (v) =>
-    v.forEach(i => {
-      if (!favor[i.name]) {
-        favor[i.name] = i.cnt;
-      } else {
-        favor[i.name] += i.cnt;
+    {
+      "name": "양요섭",
+      "text": "끝까지 우리 이야기를 좋아해줘서 고마워.",
+      "image": {
+        "src": './images/character.png',
+        "alt": '양요섭'
       }
-    })
-
-  const jumping = (jump) => {
-    currentPhase = jump
-    cursor = 0;
-    parse(0);
-  }
-  const handleSelect = (v) => {
-    const {variable, jump} = JSON.parse(decodeURI(v))
-
-    if (!!variable) {
-      addFavor(variable)
-    }
-    //jump가 있으면 점프하고, 없으면 시나리오를 이어서 출력합니다.
-    if (!!jump) {
-      jumping(jump)
-    } else {
-      parse(++cursor)
-    }
-  }
+    },
+    {
+      "text": "...",
+    },
+    {
+      "text": "잘 지내. 행복해.",
+    },
+    {
+      "text": " ",
+    },
+]
 
 
 
   const parse = (i = 0) => {
-    const {text, name, image, select, jump} = scenario[currentPhase][i];
+    const {text, name, image} = scenario[currentPhase][i];
 
     //화면을 초기화 해줍니다.
     document.getElementById('name').style.display = 'none';
-    document.getElementById('selector-wrapper').style.display = 'none';
     document.getElementById('character-wrapper').innerHTML = null;
 
 
@@ -554,18 +480,6 @@ const addFavor = (v) =>
     //이미지 유무에 따른 출력
     if (!!image) {
       document.getElementById('character-wrapper').innerHTML = `<img src="${image.src}" alt="${image.alt}"/>`
-    }
-
-    //선택지가 있으면 선택지를 출력 해 줍니다.
-    if (!!select) {
-    document.getElementById('selector-wrapper').style.display = 'grid';
-    document.getElementById('selector').innerHTML = select.map(i =>
-    `<li onclick="handleSelect('${encodeURI(JSON.stringify(i))}')">${i.text}</li>`).join('')
-    }
-
-    //jump가 있으면 해당 시나리오 오브젝트로 이동합니다.
-    if (!!jump) {
-    jumping(jump);
     }
   }
 
