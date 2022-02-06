@@ -1,4 +1,4 @@
-@media all and (min-device-width:200px) and (max-device-width:1080px) {}
+@media all and (min-device-width:200px) and (max-device-width:1000px) {}
 /* 모든 디바이스 & 최소 너비가 200 이상 & 최대 너비가 1080 이하라는 조건을 모두 만족할 때*/
 
 body {
@@ -17,15 +17,19 @@ body {
     font-size: 20px;
     position: relative;
     background-image: url("../images/background.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 
 }
 
 #character-wrapper > img{
-    max-height: 950px;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    object-fit: cover;
     position: absolute;
-    bottom: 0;
+    top: 20vh
 }
 
 #chat-wrapper {
